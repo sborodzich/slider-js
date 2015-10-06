@@ -1,0 +1,83 @@
+body, .wrapper, #slider, .image, .vertical-align-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 50%;
+    margin-top: -50px;
+}
+
+#left-arrow {
+    border-width: 50px 40px 50px 0;
+    border-color: transparent #ffffff transparent transparent;
+    left: 0;
+    margin-left: 25px;
+}
+
+#right-arrow {
+    border-width: 50px 0 50px 40px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 0;
+    margin-right: 25px;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vertical-align-wrapper {
+    display: table;
+    overflow: hidden;
+    text-align: center;
+}
+
+.vertical-align-wrapper span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.image-one {
+    background-image: url("images/1.jpg");
+}
+
+.image-two {
+    background-image: url("images/2.jpg");
+}
+
+.image-three {
+    background-image: url("images/3.jpg");
+}
+
+@media only screen and (max-width : 992px) {
+    .vertical-align-wrapper span {
+        font-size: 2.5rem;
+    }
+
+    #left-arrow {
+        border-width: 30px 20px 30px 0;
+        margin-left: 15px;
+    }
+
+    #right-arrow {
+        border-width: 30px 0 30px 20px;
+        margin-right: 15px;
+    }
+
+    .arrow {
+        margin-top: -30px;
+    }
+}
